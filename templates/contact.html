@@ -3,18 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>iarivera's page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+        <title>Contact</title>
     </head>
     <body>
-        <ul class="topnav">
-            <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-            <li><a class="active" href="#">Contact</a></li>
-            <li><a class="btn btn-success" href="{{ url_for('download_resume')}}">CV</a></li>
-        </ul>
+        <div class="topnav">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a class="active" href="#">Contact</a>
+            <a class="btn btn-success" href="{{ url_for('download_resume')}}">CV</a>
+        </div>
       <div class="main" style="pad: 0 16px;">
-        <!-- Contact Info Goes Here-->>
+        <!-- Contact Info Goes Here
+         https://www.geeksforgeeks.org/python/flask-cookies/-->
+         <iframe src="https://calendar.google.com/calendar/embed?src=thegunghoguy%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+         </iframe>
       <div class="footer"></div>
     </body>
 </html>
