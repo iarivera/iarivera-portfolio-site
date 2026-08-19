@@ -1,4 +1,5 @@
 .topnav {
+    display: flex;
     background-color: #000000;
     overflow: hidden;
 }
@@ -21,4 +22,21 @@
 .topnav a.active {
     background-color: #30e0d4;
     color: #f2f2f2;
+}
+
+.picture {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    margin-top:  20px;
+    justify-content:  center;
+}
+
+@media screen and (max-width: 720px) {
+    .topnav {
+        flex-direction: column;
+    }
 }

@@ -15,7 +15,9 @@
             <a class="btn btn-success" href="{{ url_for('download_resume')}}">CV</a>
         </div>
       <div class="main" style="pad: 0 16px;">
-        <img src="{{ url_for('static', filename='portrait.jpg')}}"  alt="Portrait" width="150" height="200">
+        <div class="picture">
+          <img src="{{ url_for('static', filename='portrait.jpg')}}"  alt="Portrait" height=auto width="250" max-width=70%>
+        </div>
         <h2>About Me</h2>
         <p>
           My name is Ivan Rivera, and I am an aspiring Software Developer based in West New York, New Jersey.
