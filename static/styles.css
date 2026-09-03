@@ -20,14 +20,32 @@
 }
 
 .topnav a.active {
-    background-color: #30e0d4;
+    background-color: #98FB98;
     color: #f2f2f2;
+}
+
+.topnav a.active:hover {
+    background-color: #2E8B57;
+    color: #000000;
 }
 
 .picture {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #98FB98;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    
 }
 
 iframe {
